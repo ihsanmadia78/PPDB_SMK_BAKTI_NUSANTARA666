@@ -80,7 +80,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-md-3 mb-3">
-                                                <a href="{{ route('siswa.cetak-kartu') }}" class="btn btn-warning btn-block" target="_blank">
+                                                <a href="{{ route('siswa.cetak-kartu') }}" class="btn btn-warning btn-block">
                                                     <i class="fas fa-print"></i> Cetak Kartu
                                                 </a>
                                             </div>

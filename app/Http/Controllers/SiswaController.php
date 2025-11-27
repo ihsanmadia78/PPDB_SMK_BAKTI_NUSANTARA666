@@ -113,11 +113,6 @@ class SiswaController extends Controller
             
             $filename = 'Kartu_Peserta_' . $pendaftar->no_pendaftaran . '.pdf';
             
-            // Check if user wants to stream (view in browser) or download
-            if ($request->get('action') === 'stream') {
-                return $pdf->stream($filename);
-            }
-            
             return $pdf->download($filename);
         } catch (\Exception $e) {
             \Log::error('Error cetakKartu: ' . $e->getMessage());
